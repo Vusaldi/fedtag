@@ -26,11 +26,11 @@ async def start(event):
   await event.reply("**👋 **Salam** \n\n**💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyanal botam**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün**\n\n/help əmrindən istifadə edin**",
             buttons=(
                    
-		      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/CrazyTagBot?startgroup=a')],
-                      [Button.url('Dəstək Qurupu 👨‍💻', 'https://t.me/Crazysup')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/crazy_resmi')],
-                      [Button.url('Crazy MMC 🔖', 'https://t.me/crazymmc')],
-		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/Dakanca_Hozu')] 
+		      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/XaosTaggerBot?startgroup=a')],
+                      [Button.url('Rəsmi Team 🇦🇿', 'https://t.me/XaosSonCevrilish')],
+                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/xaos_resmi')],
+                      [Button.url('Xaos Botlar 🦅', 'https://t.me/XaosBotlar')],
+		      [Button.url('Proglamlaşdıran 👨🏻‍💻', 'https://t.me/vusaliw')] 
                     ),
                     link_preview=False
                    )
@@ -39,21 +39,21 @@ async def help(event):
   helptext = "**@CrazyTagBot Butonları 🤖**\n\n**/sehidler - ŞƏHİDLƏRİMİZİN ADLARI İLƏ ÇAĞIRAR\n**/cancel - botu dayandırar**\n**/tag <səbəb> - 5-li tag edər**\n**/etag <səbəb> - Emoji ilə tag edərr**\n**/mtag <səbəb> - mafia rolları ilə tag edər\n**/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n**/admins <səbəb> - Yönəticiləri tək tək tag edər\n**/btag <səbəb> - Bayrağla tag edər**\n/stag <səbəb> - Şəhərlərimizin adları ilə tag edər"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/CrazyTagBot?startgroup=a')],
-                      [Button.url('Dəstək Qurupu 👨‍💻', 'https://t.me/Crazysup')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/crazy_resmi')],
-                      [Button.url('Crazy Mmc', 'https://t.me/crazymmc')],
-		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/Dakanca_Hozu')],
+                      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/XaosTaggerBot?startgroup=a')],
+                      [Button.url('Rəsmi Team 🇦🇿', 'https://t.me/XaosSonCevrilish')],
+                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/xaos_resmi')],
+                      [Button.url('Xaos Botlar 🦅', 'https://t.me/XaosBotlar')],
+		      [Button.url('Proglamlaşdıran 👨🏻‍💻', 'https://t.me/vusaliw')],
                     ),
                     link_preview=False
                    )
 	
 @client.on(events.NewMessage(pattern="^/qurup$"))
 async def help(event):
-  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə - @Dakanca_Hozu"
+  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə - @Vusaliw"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('༒︎ 𝐂𝚁𝐀𝚉𝐘 | 𝐓𝙴𝐀𝙼 𓆙 ', 'https://t.me/CrazyTeamss')],
+                      [Button.url('𝙓𝙖𝙤𝙨 𝙎𝙤𝙣 𝘾𝙚𝙫𝙧𝙞𝙡𝙞𝙨𝙝 👑 ', 'https://t.me/XaosSonCevrilish')],
                     ),
                     link_preview=False
                    )
@@ -113,7 +113,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(sehidler)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər @Dakanca_Hozu**✅")
+        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər @Vusaliw**✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
