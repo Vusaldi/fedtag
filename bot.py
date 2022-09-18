@@ -27,10 +27,10 @@ async def start(event):
             buttons=(
                    
 		      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/XaosTaggerBot?startgroup=a')],
-                      [Button.url('Rəsmi Team 🇦🇿', 'https://t.me/XaosSonCevrilish')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/xaos_resmi')],
+                      [Button.url('Rəsmi Team 🇦🇿', 'https://t.me/Xaos_Team')],
+                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/XaosResmii')],
                       [Button.url('Xaos Botlar 🦅', 'https://t.me/XaosBotlar')],
-		      [Button.url('Proglamlaşdıran 👨🏻‍💻', 'https://t.me/vusaliw')] 
+		      [Button.url('Proglamlaşdıran 👨🏻‍💻', 'https://t.me/birkapitan')] 
                     ),
                     link_preview=False
                    )
@@ -40,20 +40,20 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/XaosTaggerBot?startgroup=a')],
-                      [Button.url('Rəsmi Team 🇦🇿', 'https://t.me/XaosSonCevrilish')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/xaos_resmi')],
+                      [Button.url('Rəsmi Team 🇦🇿', 'https://t.me/Xaos_Team')],
+                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/XaosResmii')],
                       [Button.url('Xaos Botlar 🦅', 'https://t.me/XaosBotlar')],
-		      [Button.url('Proglamlaşdıran 👨🏻‍💻', 'https://t.me/vusaliw')],
+		      [Button.url('Proglamlaşdıran 👨🏻‍💻', 'https://t.me/birkapitan')],
                     ),
                     link_preview=False
                    )
 	
 @client.on(events.NewMessage(pattern="^/qurup$"))
 async def help(event):
-  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə - @Vusaliw"
+  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə - @BirKapitan"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('𝙓𝙖𝙤𝙨 𝙎𝙤𝙣 𝘾𝙚𝙫𝙧𝙞𝙡𝙞𝙨𝙝 👑 ', 'https://t.me/XaosSonCevrilish')],
+                      [Button.url('Xaos Team 🇦🇿 ', 'https://t.me/Xaos_Team')],
                     ),
                     link_preview=False
                    )
