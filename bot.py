@@ -26,13 +26,13 @@ async def start(event):
   await event.reply("**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**",
                     buttons=(
                    
-		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
-                      [Button.url('🤖 DİGƏR BOTLARIM', 'https://t.me/menimbotlarim')],
-		      [Button.url('🇦🇿 OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
-		      [Button.inline("⚙ ƏMRLƏR", data="help")],
-		    ),
+		      [Button.url('➕ ℚℝ𝕌𝕆𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
+                      [Button.url('💬 𝕊𝕆ℍ𝔹𝔼𝕋 ℚℝ𝕌ℙ𝕌𝕄𝕌ℤ', f'https://t.me/bizimBakki')],
+                      [Button.url('🇦🇿 𝕆𝕎ℕ𝔼ℝ 👨‍💻', f'https://t.me/sesizKOLGE')],
+                      [Button.inline("⚙ Ə𝕄ℝ𝕃Ə𝕃", data="help")],
+                    ),
                     link_preview=False
-                   )
+		   )
 
 @client.on(events.callbackquery.CallbackQuery(data="start"))
 async def handler(event):
@@ -58,7 +58,7 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="info"))
 async def handler(event):
-    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡  𝕏𝔸𝕆𝕊 𝕋𝔸𝔾𝔾𝔼ℝ Bot Sizə Görə:\n\n☞︎︎︎ /sehidler <səbəb> Şəhid Adları İlə Tağ Edər\n☞︎︎︎ 5-Li Tağ\n☞︎︎︎ Emojilərlə Tağ Edər\n☞︎︎︎ Bayraqlarla Tağ Edər\n☞︎︎︎ Mafia Rolları İlə Tağ Edər\n☞︎︎︎ Rayon Və Şəhər Adları İlə Tağ Edər\n☞︎︎︎ Təkli Tağ\n☞︎︎︎ Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @XAOS_Tagbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
+    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡  𝕏𝔸𝕆𝕊 𝕋𝔸𝔾𝔾𝔼ℝ Bot Sizə Görə:\n\n☞︎︎︎ Şəhid Adları İlə Tağ Edər\n☞︎︎︎ 5-Li Tağ\n☞︎︎︎ Emojilərlə Tağ Edər\n☞︎︎︎ Bayraqlarla Tağ Edər\n☞︎︎︎ Mafia Rolları İlə Tağ Edər\n☞︎︎︎ Rayon Və Şəhər Adları İlə Tağ Edər\n☞︎︎︎ Təkli Tağ\n☞︎︎︎ Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @XAOS_Tagbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
 	              [Button.url('➕ ℚℝ𝕌ℙ𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
 		      [Button.inline("⚙ 𝔼𝕊𝔸𝕊 𝕄𝔼𝕐ℕ𝕌", data="start")],
 		    ),
