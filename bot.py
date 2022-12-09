@@ -21,7 +21,18 @@ anlik_calisan = []
 tekli_calisan = []
 
 
-
+@client.on(events.NewMessage(pattern="^/start$"))
+async def start(event):
+  await event.reply("**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**",
+                    buttons=(
+                   
+		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
+                      [Button.url('🤖 DİGƏR BOTLARIM', 'https://t.me/menimbotlarim')],
+		      [Button.url('🇦🇿 OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
+		      [Button.inline("⚙ ƏMRLƏR", data="help")],
+		    ),
+                    link_preview=False
+                   )
 
 @client.on(events.callbackquery.CallbackQuery(data="start"))
 async def handler(event):
