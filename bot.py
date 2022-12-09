@@ -48,7 +48,7 @@ async def handler(event):
 			     
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
-    await event.edit(f"⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Un Əmrləri **\n\n**/tag <səbəb> - 5-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/mtag <səbəb> 7 - Li Mafia Rolları İlı Tağ Edər**\n\n**/rtag <səbəb> 7 - Li Rayon Və Şəhər Adları İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Adminləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
+    await event.edit(f"⚡ 𝕏𝔸𝕆𝕊 𝕋𝔸𝔾𝔾𝔼ℝ İn Əmrləri **\n\n**/tag <səbəb> - 5-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/mtag <səbəb> 7 - Li Mafia Rolları İlı Tağ Edər**\n\n**/rtag <səbəb> 7 - Li Rayon Və Şəhər Adları İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Adminləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
                       [Button.url('➕ ℚℝ𝕌ℙ𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
 	              [Button.inline("ℹ 𝕀ℕ𝔽𝕆", data="info")],
                       [Button.inline("🗑 𝔹𝔸𝔾𝕃𝔸", data="start")],
@@ -75,13 +75,13 @@ sehidler = "Abdullayev Qəzənfər Nəcəf Abdullayev Nurlan İnqilab Abdullayev
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
-    return await event.respond("**Bu buton qurup və kanallar üçün keçərlidi ❗**")
+    return await event.respond("**Bu əmr qurup və kanallar üçün keçərlidi ❗**")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("**Bu butonu sadəcə adminlər istifadə edə bilər 〽️**")
+    return await event.respond("**Bu əmr sadəcə adminlər istifadə edə bilər 〽️**")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -90,11 +90,11 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("**Keçmiş mesajlar üçün tag edə bilmərəm**")
+        return await event.respond("**❌ Keçmiş mesajlar üçün tag edə bilmərəm**")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("İstifadəçiləri çağırmağım üçün bir səbəb yoxdur ")
+    return await event.respond("❌ İstifadəçiləri çağırmağım üçün bir səbəb yoxdur ")
   else:
-    return await event.respond("**İstifadəçiləri çağırmağım üçün bir səbəb yazın...!**")
+    return await event.respond("**🗣 İstifadəçiləri çağırmağım üçün bir səbəb yazın...!**")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
@@ -145,13 +145,13 @@ seherler = "Ağcabədi Ağdam Ağdaş Ağdərə Ağıstafa Ağsu Astara Babək B
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
-    return await event.respond("**Bu buton qurup və kanallar üçün keçərlidi ❗**")
+    return await event.respond("**Bu əmr qurup və kanallar üçün keçərlidi ❗**")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("**Bu butonu sadəcə adminlər istifadə edə bilər 〽️**")
+    return await event.respond("**Bu əmr sadəcə adminlər istifadə edə bilər 〽️**")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -160,11 +160,11 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("**Keçmiş mesajlar üçün tag edə bilmərəm**")
+        return await event.respond("**❌ Keçmiş mesajlar üçün tag edə bilmərəm**")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("İstifadəçiləri çağırmağım üçün bir səbəb yoxdur ")
+    return await event.respond("❌ İstifadəçiləri çağırmağım üçün bir səbəb yoxdur ")
   else:
-    return await event.respond("**İstifadəçiləri çağırmağım üçün bir səbəb yazın...!**")
+    return await event.respond("**🗣 İstifadəçiləri çağırmağım üçün bir səbəb yazın...!**")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
@@ -213,13 +213,13 @@ mafia = "👨‍🌾Vətəndaş 👨‍✈️Komissar Kattani 👨‍💼Çavuş
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
-    return await event.respond("**Bu buton qurup və kanallar üçün keçərlidi ❗**")
+    return await event.respond("**Bu əmr qurup və kanallar üçün keçərlidi ❗**")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("**Bu butonu sadəcə adminlər istifadə edə bilər 〽️**")
+    return await event.respond("**Bu əmr sadəcə adminlər istifadə edə bilər 〽️**")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -228,11 +228,11 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("**Keçmiş mesajlar üçün tag edə bilmərəm**")
+        return await event.respond("**❌ Keçmiş mesajlar üçün tag edə bilmərəm**")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("İstifadəçiləri çağırmağım üçün bir səbəb yoxdur ")
+    return await event.respond("❌ İstifadəçiləri çağırmağım üçün bir səbəb yoxdur ")
   else:
-    return await event.respond("**İstifadəçiləri çağırmağım üçün bir səbəb yazın...!**")
+    return await event.respond("**🗣 İstifadəçiləri çağırmağım üçün bir səbəb yazın...!**")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
