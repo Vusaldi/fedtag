@@ -23,41 +23,50 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**👋 **Salam** \n\n**💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyanal botam**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün**\n\n/help əmrindən istifadə edin**",
-            buttons=(
+  await event.reply("**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**",
+                    buttons=(
                    
-		      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/XaosTaggerBot?startgroup=a')],
-                      [Button.url('Rəsmi Team 🇦🇿', 'https://t.me/Xaos_Team')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/XaosResmii')],
-                      [Button.url('Xaos Botlar 🦅', 'https://t.me/XaosBotlar')],
-		      [Button.url('Proglamlaşdıran 👨🏻‍💻', 'https://t.me/birkapitan')] 
-                    ),
+		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
+                      [Button.url('🤖 DİGƏR BOTLARIM', 'https://t.me/menimbotlarim')],
+		      [Button.url('🇦🇿 OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
+		      [Button.inline("⚙ ƏMRLƏR", data="help")],
+		    ),
                     link_preview=False
                    )
-@client.on(events.NewMessage(pattern="^/help$"))
-async def help(event):
-  helptext = "**@XaosTaggerBot Butonları 🤖**\n\n**/sehidler - ŞƏHİDLƏRİMİZİN ADLARI İLƏ ÇAĞIRAR\n**/cancel - botu dayandırar**\n**/tag <səbəb> - 5-li tag edər**\n**/etag <səbəb> - Emoji ilə tag edərr**\n**/mtag <səbəb> - mafia rolları ilə tag edər\n**/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n**/admins <səbəb> - Yönəticiləri tək tək tag edər\n**/btag <səbəb> - Bayrağla tag edər**\n/stag <səbəb> - Şəhərlərimizin adları ilə tag edər"
-  await event.reply(helptext,
-                    buttons=(
-                      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/XaosTaggerBot?startgroup=a')],
-                      [Button.url('Rəsmi Team 🇦🇿', 'https://t.me/Xaos_Team')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/XaosResmii')],
-                      [Button.url('Xaos Botlar 🦅', 'https://t.me/XaosBotlar')],
-		      [Button.url('Proglamlaşdıran 👨🏻‍💻', 'https://t.me/birkapitan')],
+
+@client.on(events.callbackquery.CallbackQuery(data="start"))
+async def handler(event):
+    await event.edit(f"**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**", buttons=(
+                      
+                      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
+                      [Button.url('🤖 DİGƏR BOTLARIM', f'https://t.me/menimbotlarim')],
+                      [Button.url('🇦🇿 OWNER 👨‍💻', f'https://t.me/sesizKOLGE')],
+                      [Button.inline("⚙ ƏMRLƏR", data="help")],
                     ),
-                    link_preview=False
-                   )
+                    link_preview=False)
+
+			     
+@client.on(events.callbackquery.CallbackQuery(data="help"))
+async def handler(event):
+    await event.edit(f"⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/mtag <səbəb> 7 - Li Mafia Rolları İlı Tağ Edər**\n\n**/rtag <səbəb> 7 - Li Rayon Və Şəhər Adları İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Adminləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
+                      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
+	              [Button.inline("ℹ İNFO", data="info")],
+                      [Button.inline("🗑 Bağla", data="start")],
+                    ),
+                    link_preview=False)
+
+
+@client.on(events.callbackquery.CallbackQuery(data="info"))
+async def handler(event):
+    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Mafia Rolları İlə Tağ Edər\n📌 Rayon Və Şəhər Adları İlə Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @Flashtaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
+	              [Button.url('➕ Botu Qruba Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
+		      [Button.inline("⚙ Əsas Meynu", data="start")],
+		    ),
+                    link_preview=False)
+                   
 	
-@client.on(events.NewMessage(pattern="^/qurup$"))
-async def help(event):
-  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə - @BirKapitan"
-  await event.reply(helptext,
-                    buttons=(
-                      [Button.url('Xaos Team 🇦🇿 ', 'https://t.me/Xaos_Team')],
-                    ),
-                    link_preview=False
-                   )
 	
+
 	
 sehidler = "Abdullayev Qəzənfər Nəcəf Abdullayev Nurlan İnqilab Abdullayev Nicat Mirnəbi Abdullayev Məhəmməd Ramazan Allahverənov Telman Fazil Alıyev Qələndər Nofəl Abdullayev İbrahim Habil Abdullayev Elşən Sabir Abdullayev Həsən Qərib󠁧󠁢󠁷󠁬󠁳󠁿󠁧󠁢󠁷󠁬󠁳󠁿".split(" ")
 
