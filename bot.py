@@ -48,7 +48,7 @@ async def handler(event):
 			     
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
-    await event.edit(f"⚡ 𝕏𝔸𝕆𝕊 𝕋𝔸𝔾𝔾𝔼ℝ İn Əmrləri **\n\n**/tag <səbəb> - 5-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/mtag <səbəb> 7 - Li Mafia Rolları İlı Tağ Edər**\n\n**/rtag <səbəb> 7 - Li Rayon Və Şəhər Adları İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Adminləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
+    await event.edit(f"⚡ 𝕏𝔸𝕆𝕊 𝕋𝔸𝔾𝔾𝔼ℝ İn Əmrləri **\n\n**/tag <səbəb> - 5-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/mtag <səbəb>  Mafia Rolları İlı Tağ Edər**\n\n**/rtag <səbəb> Rayon Və Şəhər Adları İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Adminləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
                       [Button.url('➕ ℚℝ𝕌ℙ𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
 	              [Button.inline("ℹ 𝕀ℕ𝔽𝕆", data="info")],
                       [Button.inline("🗑 𝔹𝔸𝔾𝕃𝔸", data="start")],
@@ -58,7 +58,7 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="info"))
 async def handler(event):
-    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡  𝕏𝔸𝕆𝕊 𝕋𝔸𝔾𝔾𝔼ℝ Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Mafia Rolları İlə Tağ Edər\n📌 Rayon Və Şəhər Adları İlə Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @Flashtaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
+    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡  𝕏𝔸𝕆𝕊 𝕋𝔸𝔾𝔾𝔼ℝ Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Mafia Rolları İlə Tağ Edər\n📌 Rayon Və Şəhər Adları İlə Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @XAOS_Tagbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
 	              [Button.url('➕ ℚℝ𝕌ℙ𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
 		      [Button.inline("⚙ 𝔼𝕊𝔸𝕊 𝕄𝔼𝕐ℕ𝕌", data="start")],
 		    ),
