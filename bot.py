@@ -26,10 +26,10 @@ async def start(event):
   await event.reply("**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**",
                     buttons=(
                    
-		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
-                      [Button.url('🤖 DİGƏR BOTLARIM', 'https://t.me/menimbotlarim')],
-		      [Button.url('🇦🇿 OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
-		      [Button.inline("⚙ ƏMRLƏR", data="help")],
+		      [Button.url('➕ ℚℝ𝕌ℙ𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
+                      [Button.url('💬 𝕏𝔸𝕆𝕊 𝕋𝔼𝔸𝕄', 'https://t.me/menimbotlarim')],
+		      [Button.url('🇦🇿 𝕆𝕎ℕ𝔼ℝ 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
+		      [Button.inline("⚙ Ə𝕄ℝ𝕃Ə𝕃", data="help")],
 		    ),
                     link_preview=False
                    )
@@ -38,10 +38,10 @@ async def start(event):
 async def handler(event):
     await event.edit(f"**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**", buttons=(
                       
-                      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
-                      [Button.url('🤖 DİGƏR BOTLARIM', f'https://t.me/menimbotlarim')],
-                      [Button.url('🇦🇿 OWNER 👨‍💻', f'https://t.me/sesizKOLGE')],
-                      [Button.inline("⚙ ƏMRLƏR", data="help")],
+                      [Button.url('➕ ℚℝ𝕌𝕆𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
+                      [Button.url('💬 𝕏𝔸𝕆𝕊 𝕋𝔼𝔸𝕄', f'https://t.me/menimbotlarim')],
+                      [Button.url('🇦🇿 𝕆𝕎ℕ𝔼ℝ 👨‍💻', f'https://t.me/sesizKOLGE')],
+                      [Button.inline("⚙ Ə𝕄ℝ𝕃Ə𝕃", data="help")],
                     ),
                     link_preview=False)
 
@@ -49,9 +49,9 @@ async def handler(event):
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
     await event.edit(f"⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/mtag <səbəb> 7 - Li Mafia Rolları İlı Tağ Edər**\n\n**/rtag <səbəb> 7 - Li Rayon Və Şəhər Adları İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Adminləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
-                      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
-	              [Button.inline("ℹ İNFO", data="info")],
-                      [Button.inline("🗑 Bağla", data="start")],
+                      [Button.url('➕ ℚℝ𝕌ℙ𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
+	              [Button.inline("ℹ 𝕀ℕ𝔽𝕆", data="info")],
+                      [Button.inline("🗑 𝔹𝔸𝔾̆𝕃𝔸", data="start")],
                     ),
                     link_preview=False)
 
@@ -59,8 +59,8 @@ async def handler(event):
 @client.on(events.callbackquery.CallbackQuery(data="info"))
 async def handler(event):
     await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Mafia Rolları İlə Tağ Edər\n📌 Rayon Və Şəhər Adları İlə Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @Flashtaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
-	              [Button.url('➕ Botu Qruba Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
-		      [Button.inline("⚙ Əsas Meynu", data="start")],
+	              [Button.url('➕ ℚℝ𝕌ℙ𝔸 𝔼𝕃𝔸𝕍𝔼 𝔼𝕋 ➕', 'https://t.me/XAOS_Tagbot?startgroup=a')],
+		      [Button.inline("⚙ 𝔼𝕊𝔸𝕊 𝕄𝔼𝕐ℕ𝕌", data="start")],
 		    ),
                     link_preview=False)
                    
