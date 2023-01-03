@@ -192,7 +192,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"➪ [{random.choice(seherler)}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər @Vusaliw**✅")
+        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər @sesizKOLGE**✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -260,7 +260,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"➪ [{random.choice(mafia)}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər  @Vusaliw**✅")
+        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər  @sesizKOLGE**✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -465,7 +465,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"➪ [{random.choice(heyvan)}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər @Vusaliw**✅")
+        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər @sesizKOLGE**✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -611,18 +611,6 @@ async def cancel(event):
   tekli_calisan.remove(event.chat_id)
 	
 
-
-@client.on(events.NewMessage(pattern="^/admin ?(.*)"))
-async def tag_admin(event):
-    chat = await event.get_input_chat()
-    text = "♕︎Qrup Adminlərinin Siyahısı♕︎"
-    async for x in event.client.iter_participants(chat, 100, filter=ChannelParticipantsAdmins):
-        text += f" \n ➪ [{x.first_name}](tg://user?id={x.id})"
-    if event.reply_to_msg_id:
-        await event.client.send_message(event.chat_id, text, reply_to=event.reply_to_msg_id)
-    else:
-        await event.reply(text)
-    raise StopPropagation
 
 
 
